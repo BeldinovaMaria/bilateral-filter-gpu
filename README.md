@@ -1,2 +1,20 @@
-# bilateral-filter-gpu
-CUDA implementation of bilateral filter with texture memory
+# Билатеральная фильтрация на GPU (CUDA)
+
+## Результаты
+
+ Параметр  Значение 
+--------------------
+ Размер изображения  512×512 
+ GPU время  **0.090 мс** 
+ CPU время  0.735 мс 
+ Текстурная память   Texture Objects 
+ Обработка границ  CLAMP 
+
+## Результат фильтрации
+
+![Результат](output_gpu_texture.bmp)
+
+## Как запустить
+```bash
+nvcc -arch=sm_75 -o bilateral bilateral_texture.cu -lm
+./bilateral
