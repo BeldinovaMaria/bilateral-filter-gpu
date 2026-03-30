@@ -12,10 +12,6 @@
 
 ## Результат фильтрации
 
-![Результат](output_gpu_texture-_2.jpg)
+![Результат](output_gpu_texture-_2_.jpg)
 
-## Как запустить
 
-```bash
-nvcc -arch=sm_75 -o bilateral bilateral_texture.cu -lm
-./bilateral
