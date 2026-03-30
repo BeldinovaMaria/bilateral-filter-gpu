@@ -9,12 +9,3 @@
  CPU время  0.735 мс 
  Текстурная память   Texture Objects 
  Обработка границ  CLAMP 
-
-## Результат фильтрации
-
-![Результат](output_gpu_texture.bmp)
-
-## Как запустить
-```bash
-nvcc -arch=sm_75 -o bilateral bilateral_texture.cu -lm
-./bilateral
